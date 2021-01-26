@@ -17,7 +17,6 @@ body {
   font-family: "Roboto", sans-serif;
   font-style: normal;
   letter-spacing: var(--text-letter-spacing);
-  width: 1600px;
 }
 .lists {
   list-style: none;
@@ -46,22 +45,21 @@ ul {
 
 /*=========HEDER==========*/
 .header {
+  width: 1600px;
   height: 80px;
+  padding-top: 24px;
+  padding-bottom: 25px;
 }
 .header-container {
   width: 1200px;
-  height: 80px;
   padding: 0 15px;
   /*outline: 2px solid tomato;*/
   margin: auto auto;
   justify-content: center;
-
   display: flex;
 }
 .navigation {
   display: flex;
-  padding-top: 24px;
-  padding-bottom: 25px;
 }
 .logo-link {
   display: flex;
@@ -114,7 +112,6 @@ ul {
 
 .contact-list {
   display: flex;
-  justify-content: center;
   align-items: center;
   margin-left: auto;
 }
@@ -145,23 +142,20 @@ ul {
 
 /*=========HERO===========*/
 .hero {
-  width: 1600px;
   height: 600px;
   background-color: #2f303a;
   text-align: center;
-  align-items: center;
-  vertical-align: middle;
+  padding-top: 200px;
+  padding-bottom: 200px;
 }
 
 .hero-container {
   width: 1200px;
-  height: 600px;
+
   padding: 0 15px;
   /*outline: 2px solid tomato;*/
   margin-left: auto;
   margin-right: auto;
-  padding-top: 200px;
-  padding-bottom: 280;
 }
 
 .main-title {
@@ -204,12 +198,15 @@ ul {
 /*==========END HERO==========*/
 
 /*===========TEXT SECTION======*/
+.text-section {
+  height: 195px;
+  display: flex;
+  padding-top: 94px;
+}
 .text-container {
   width: 1200px;
-  height: 195px;
   padding: 0 15px;
   /*outline: 1px solid #7adf27;*/
-  padding-top: 94px;
   margin-left: auto;
   margin-right: auto;
 }
@@ -218,9 +215,11 @@ ul {
   display: flex;
 }
 .text-list-itme {
-  list-style-type: none;
   display: flexbox;
   width: 270px;
+}
+.text-list-itme:not(:last-child) {
+  margin-right: 30px;
 }
 .text-third-title {
   font-weight: bold;
@@ -241,13 +240,15 @@ ul {
 
 /*========SERVISES============*/
 .servises-section {
-  width: 1600px;
+  height: 574px;
   padding-top: 94px;
-  margin-bottom: 94px;
+  padding-bottom: 94px;
 }
 .servises-container {
+  display: flex;
+  flex-wrap: wrap;
   width: 1200px;
-  padding: 0 -15px;
+  padding: 0px -15px;
   /*outline: 1px solid #7adf27;*/
   margin-left: auto;
   margin-right: auto;
@@ -262,23 +263,20 @@ ul {
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 50px;
-  margin-top: 0px;
-}
-.servises-list-itme {
-  display: inline-block;
-  list-style-type: none;
 }
 .servises-list {
+  display: flex;
+  flex-wrap: wrap;
 }
 .servises-list-itme {
-  padding: 15px;
+  margin: 15px;
 }
 /*========END SERVISES============*/
 
 /*==============TEAM ===================*/
 .team-section {
   background-color: #f5f4fa;
-  width: 1600px;
+
   height: 648px;
   /*outline: 1px solid tomato;*/
   padding-top: 94px;
@@ -286,9 +284,8 @@ ul {
 }
 .team-container {
   width: 1200px;
-  height: 368px;
-  padding: 0 -15px;
-  /* outline: 1px solid #7adf27;*/
+  padding: 0 15px;
+  /*outline: 1px solid #7adf27;*/
   margin-left: auto;
   margin-right: auto;
   text-align: center;
@@ -296,34 +293,34 @@ ul {
 }
 .team-list {
   display: flex;
+  flex-wrap: wrap;
+  margin: -15px;
 }
 .team-list-itme {
-  display: inline-block;
-  padding: 15px;
+  margin: 15px;
+  outline: 1px solid #ececec;
 }
-.list-name {
-  padding-top: 30px;
-}
+
 /*=========fOOTER============*/
 .footer {
-  width: 1600px;
   height: 250px;
   background-color: #2f303a;
+  padding-top: 60px;
+  padding-bottom: 60px;
 }
 .footer-container {
   width: 1200px;
-  height: 252px;
   padding: 0 15px;
   /*outline: 2px solid tomato;*/
   margin: 0 auto;
-  padding-top: 60px;
-  padding-bottom: 60px;
 }
 
 .footer .logo-link {
   margin-bottom: 20px;
 }
-
+.footer .logo-part-name {
+  color: #ffffff;
+}
 .address-link {
   font-weight: normal;
   font-style: normal;
@@ -355,6 +352,10 @@ ul {
   padding-top: 10px;
   margin-bottom: 9px;
 }
+.footer .contact-list-link:hover,
+.contact-list-link:focus {
+  color: var(--accent-color);
+}
 .footer .contact-list-link {
   font-weight: 500;
   font-size: 14px;
@@ -364,22 +365,26 @@ ul {
 }
 
 /*========PORTFOLIO============*/
+.portfolio .header {
+  border-bottom: 1px solid #ececec;
+}
 .portfolio-section {
   width: 1600px;
   padding-top: 94px;
 }
 .portfolio-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
   width: 1200px;
-  padding: 0 -15px;
+  padding: 0 15px;
   /* outline: 1px solid #72ec0d;*/
   margin-left: auto;
   margin-right: auto;
-
   padding-bottom: 94px;
 }
 .filter-container {
   display: flex;
-  justify-content: center;
   padding-bottom: 50px;
 }
 .filter-list-itme {
@@ -412,23 +417,37 @@ ul {
 
 .galery-container {
   display: flex;
+  flex-wrap: wrap;
   flex-direction: row;
-  /* outline: 1px solid sienna;*/
+  /*outline: 1px solid sienna;*/
   font-size: 0px;
 }
+.portfolio-galery-list {
+  display: flex;
+  flex-wrap: wrap;
+  margin: -15px;
+}
 .galery-list-itme {
-  display: inline-block;
-  padding: 15px;
+  margin: 15px;
+  outline: 1px solid #eeeeee;
 }
 
 /*============COMPANENTS==========*/
 .forth-title {
   font-weight: 500;
-  font-size: 16px;
+  font-size: 18px;
   line-height: 1.187;
   color: var(--titles-color);
   margin-bottom: 10px;
 }
+
+.list-name {
+  padding: 30px;
+}
+.galery-list-itme .list-name {
+  padding: 20px;
+}
+
 .sub-title {
   font-weight: 400;
   font-size: 16px;
