@@ -117,10 +117,18 @@ ul {
 }
 
 .contact-list-itme {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   height: 16px;
 }
 .contact-list-itme:first-child {
   margin-right: 50px;
+}
+.contact-icon {
+  width: 10px;
+  height: 16px;
+  color: #757575;
 }
 .contact-list-link {
   display: flex;
