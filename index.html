@@ -14,7 +14,6 @@
     <link rel="preconnect" href="https://fonts.gstatic.com">
     
     <link rel="stylesheet" href="./css/style.css">
-    <link rel="stylesheet" href="./images/iconsvg/symbol-defs.svg">
 </head>
 <body>
     <!--Header container-->
@@ -30,13 +29,12 @@
             </nav>
             <ul class="contact-list">
                
-                <li class="contact-list-itme lists">
-                    <svg class="contact-icon">
-                        <use href="#icon-mail"></use>
-                    </svg><a class="contact-list-link links" href="mailto:info@devstudio.com">info@devstudio.com</a></li>
-                <li class="contact-list-itme lists"><svg class="contact-icon">
-                    <use href="#icon-phone"></use>
-                </svg><a class="contact-list-link links" href="tel:+380961111111">+38 096 111 11 11</a></li>
+                <li class="contact-list-itme lists icon-mail">
+                   <a class="contact-list-link links" href="mailto:info@devstudio.com">info@devstudio.com</a>
+                </li>
+                <li class="contact-list-itme lists icon-phone">
+                    <a class="contact-list-link links" href="tel:+380961111111">+38 096 111 11 11</a>
+                </li>
             </ul>
         </div>
         
@@ -53,19 +51,19 @@
     <section class="text-section">
         <div class="text-container">
             <ul class="text-list">
-                <li class="text-list-itme lists">
+                <li class="text-list-itme lists icon-tarelka">
                     <h3 class="text-third-title">Внимание к деталям</h3>
                     <p class="discreption">Идейные соображения, а также начало повседневной работы по формированию позиции.</p>
                 </li>
-                <li class="text-list-itme lists">
+                <li class="text-list-itme lists icon-clock">
                     <h3 class="text-third-title">Пунктуальность</h3>
                     <p class="discreption">Задача организации, в особенности же рамки и место обучения кадров влечет за собой.</p>
                 </li>
-                <li class="text-list-itme lists">
+                <li class="text-list-itme lists icon-diagram">
                     <h3 class="text-third-title">Планирование</h3>
                     <p class="discreption">Равным образом консультация с широким активом в значительной степени обуславливает.</p>
                 </li>
-                <li class="text-list-itme lists">
+                <li class="text-list-itme lists icon-cosmonaut">
                     <h3 class="text-third-title">Современные технологии</h3>
                     <p class="discreption">Значимость этих проблем настолько очевидна, что реализация плановых заданий.</p>
                 </li>
@@ -133,21 +131,56 @@
                 </ul>
            </div>
     </section>
+    <section class="customer-section">
+        <div class="customer-container">
+            <h3 class="third-title">Постоянные клиенты</h3>
+            <ul class="customer-list">
+                <li class="customer-list-itme lists"></li>
+                <li class="customer-list-itme lists"></li>
+                <li class="customer-list-itme lists"></li>
+                <li class="customer-list-itme lists"></li>
+                <li class="customer-list-itme lists"></li>
+                <li class="customer-list-itme lists"></li>
+            </ul>
+        </div>
+        
+    </section>
     </main>
     <!--footer container-->
     <footer class="footer">
     <div class="footer-container">
-        <a class="logo-link links" href="#">Web<span class="logo-part-name">Studio</span></a>
-        <address class="address">
-            <a class="address-link" href="https://goo.gl/maps/RLjfEgPPpNQvGcjaA"
-                target="_blank">г.Киев,
-                пр-т Леси Украинки,
-                26</a>
-        </address>
-        <ul class="contact-list">
-            <li class="contact-list-itme lists"><a class="contact-list-link links" href="mailto:info@devstudio.com">info@devstudio.com</a>
+        <div class="footer-contacts">
+            <a class="logo-link links" href="#">Web<span class="logo-part-name">Studio</span></a>
+            <address class="address">
+                <a class="address-link" href="https://goo.gl/maps/RLjfEgPPpNQvGcjaA" target="_blank">г.Киев,
+                    пр-т Леси Украинки,
+                    26</a>
+            </address>
+            <ul class="contact-list">
+                <li class="contact-list-itme lists"><a class="contact-list-link links"
+                        href="mailto:info@devstudio.com">info@devstudio.com</a>
+                </li>
+                <li class="contact-list-itme lists"><a class="contact-list-link links" href="tel:+380961111111">+38 096 111 11
+                        11</a></li>
+            </ul>
+        </div>
+        
+    </div>
+    <div class="social-media">
+        <h3></h3>
+        <ul>
+            <li>
+                <a href=""><img src="" alt=""></a>
             </li>
-            <li class="contact-list-itme lists"><a class="contact-list-link links" href="tel:+380961111111">+38 096 111 11 11</a></li>
+            <li>
+                <a href=""><img src="" alt=""></a>
+            </li>
+            <li>
+                <a href=""><img src="" alt=""></a>
+            </li>
+            <li>
+                <a href=""><img src="" alt=""></a>
+            </li>
         </ul>
     </div>
     </footer>  

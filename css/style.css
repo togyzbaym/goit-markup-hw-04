@@ -125,10 +125,23 @@ ul {
 .contact-list-itme:first-child {
   margin-right: 50px;
 }
-.contact-icon {
-  width: 10px;
-  height: 16px;
-  color: #757575;
+.contact-list-itme::before {
+  display: inline-block;
+  content: "";
+  width: 20px;
+  height: 20px;
+  margin-right: 10px;
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-color: #ffffff;
+}
+.icon-mail::before {
+  background-image: url("/images/svg/mail.svg");
+}
+.icon-phone::before {
+  background-image: url("/images/svg/phone.svg");
+  background-size: 10px 16px;
 }
 .contact-list-link {
   display: flex;
@@ -151,10 +164,17 @@ ul {
 /*=========HERO===========*/
 .hero {
   height: 600px;
-  background-color: #2f303a;
+  background-color: rgba(47, 48, 58, 0);
   text-align: center;
   padding-top: 200px;
   padding-bottom: 200px;
+  background-image: linear-gradient(
+    to bottom rgba(255, 255, 255, 0.4),
+    rgba(47, 48, 58, 0.4)
+  );
+  background-image: url("/images/hero/hero.jpg");
+  background-size: cover;
+  background-position: center;
 }
 
 .hero-container {
@@ -207,14 +227,14 @@ ul {
 
 /*===========TEXT SECTION======*/
 .text-section {
-  height: 195px;
   display: flex;
   padding-top: 94px;
 }
 .text-container {
   width: 1200px;
+  height: 251px;
   padding: 0 15px;
-  /*outline: 1px solid #7adf27;*/
+  outline: 1px solid #7adf27;
   margin-left: auto;
   margin-right: auto;
 }
@@ -225,6 +245,29 @@ ul {
 .text-list-itme {
   display: flexbox;
   width: 270px;
+}
+.text-list-itme::before {
+  content: "";
+  display: block;
+  widows: 270px;
+  height: 120px;
+  margin-bottom: 30px;
+  background-color: #f5f4fa;
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+.icon-tarelka::before {
+  background-image: url("/images/svg/tarelka.svg");
+}
+.icon-clock::before {
+  background-image: url("/images/svg/clock.svg");
+}
+.icon-diagram::before {
+  background-image: url("/images/svg/diagram.svg");
+}
+.icon-cosmonaut::before {
+  background-image: url("/images/svg/cosmonaut.svg");
 }
 .text-list-itme:not(:last-child) {
   margin-right: 30px;
@@ -308,9 +351,21 @@ ul {
   margin: 15px;
   outline: 1px solid #ececec;
 }
-
+/*=========CUSTOMER============*/
+.customer-section {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+customer-container {
+  width: 1200px;
+  padding: 0 15px;
+  height: 182px;
+}
+/*=========CUSTOMER END============*/
 /*=========fOOTER============*/
 .footer {
+  display: flex;
+
   height: 250px;
   background-color: #2f303a;
   padding-top: 60px;
@@ -370,6 +425,9 @@ ul {
   line-height: 1.142;
   letter-spacing: 0.02em;
   color: #757575;
+}
+.social-media {
+  outline: 1px solid #2196f3;
 }
 
 /*========PORTFOLIO============*/
