@@ -242,7 +242,7 @@ ul {
   width: 1200px;
   height: 251px;
   padding: 0 15px;
-  outline: 1px solid #7adf27;
+  /*outline: 1px solid #7adf27;*/
   margin-left: auto;
   margin-right: auto;
 }
@@ -336,7 +336,7 @@ ul {
 .team-section {
   background-color: #f5f4fa;
 
-  height: 648px;
+  height: 708px;
   /*outline: 1px solid tomato;*/
   padding-top: 94px;
   padding-bottom: 94px;
@@ -622,7 +622,7 @@ ul {
 .social-media {
   width: 206px;
   height: 80px;
-  outline: 1px solid #2196f3;
+  /*outline: 1px solid #2196f3;*/
 }
 .social-media .text-third-title {
   font-size: 14px;
@@ -636,7 +636,7 @@ ul {
   justify-content: space-between;
   width: 206px;
   height: 44px;
-  outline: 1px solid teal;
+  /* outline: 1px solid teal;*/
 }
 
 .social-media-list-itme {
