@@ -451,9 +451,9 @@ ul {
 }
 .footer-container {
   display: flex;
+  align-items: baseline;
   width: 1200px;
   padding: 0 15px;
-  align-items: baseline;
   margin: 0 auto;
 }
 
